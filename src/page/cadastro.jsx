@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 
 const Card = styled.div`
   width: 350px;
@@ -66,6 +68,8 @@ const Button = styled.input.attrs({ type: 'submit' })`
 
 const Cadastro = () => {
   return (
+    <>
+    <Navbar />
     <Card>
       <CardHeader>
         <TextHeader>Register</TextHeader>
@@ -92,6 +96,8 @@ const Cadastro = () => {
         </form>
       </CardBody>
     </Card>
+    <Footer />
+    </>
   );
 };
 
