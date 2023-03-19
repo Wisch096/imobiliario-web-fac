@@ -3,11 +3,12 @@ import Carousel from "../components/carousel";
 import Card from "../components/card_imob";
 import Navbar from '../components/navbar';
 import Searchbar from '../components/searchbar';
+import Footer from '../components/footer';
 
 const Container = styled.div`
   margin: 0;
   padding: 0;
-`
+`;
 
 const ContainerCard = styled.div`
   display: flex;
@@ -58,8 +59,9 @@ function Home() {
             price={1500} 
             imageUrl="teste3.jpg" 
         />
+        
       </ContainerCard>
-
+      <Footer />
     </Container>
 
 
