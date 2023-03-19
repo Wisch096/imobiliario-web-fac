@@ -5,7 +5,8 @@ const CardContainer = styled.div`
   border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
-  width: 300px;
+  width: 25%;
+  margin-top: 400px;
 `;
 
 const Image = styled.img`
