@@ -1,10 +1,7 @@
 import styled from 'styled-components';
 import Carousel from "../components/carousel";
 import Card from "../components/card_imob";
-const Container = styled.div`
-  margin: 0;
-  padding: 0;
-` 
+
 
 
 const ContainerCard = styled.div`
@@ -17,6 +14,7 @@ function Home() {
   return (
     <Container>
       <div>
+        <Navbar />
         <Carousel />
       </div>
       <ContainerCard>
@@ -57,7 +55,10 @@ function Home() {
             imageUrl="teste3.jpg" 
         />
       </ContainerCard>
-    </Container>
+
+    </div>
+
+
   )
 }
 

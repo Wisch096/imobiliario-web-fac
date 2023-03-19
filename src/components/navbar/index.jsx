@@ -39,7 +39,8 @@ const NavLink = styled.li`
 function Navbar() {
   return (
     <NavContainer>
-      <img src={teste1} alt="Imagem de exemplo" />
+      <img src={teste1} alt="Imagem de exemplo" 
+       style={{ width: '5%', height: 'auto' }}/>
       <NavLinks>
         <NavLink>
           <a href="#">Fale conosco</a>
