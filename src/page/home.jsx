@@ -1,8 +1,12 @@
 import styled from 'styled-components';
 import Carousel from "../components/carousel";
 import Card from "../components/card_imob";
+import Navbar from '../components/navbar';
 
-
+const Container = styled.div`
+  margin: 0;
+  padding: 0;
+`
 
 const ContainerCard = styled.div`
   display: flex;
@@ -56,7 +60,7 @@ function Home() {
         />
       </ContainerCard>
 
-    </div>
+    </Container>
 
 
   )
