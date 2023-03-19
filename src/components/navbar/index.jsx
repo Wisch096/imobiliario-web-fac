@@ -1,45 +1,45 @@
 import styled from "styled-components";
-
+import teste1 from "../../img/logo.png";
 
 const NavContainer = styled.nav`
-  display: flex;
+    display: flex;
   justify-content: space-between;
   align-items: center;
   background-color:#191970;
   color: #fff;
   padding: 1rem;
   font-size: 25px;
-  font-family: 'Poppins';
+  font-family: 'Verdana';
 `;
 
-const Logo = styled.h1`
-  margin: 0;
-`;
+
 
 const NavLinks = styled.ul`
-  display: flex;
+    display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 `;
 
 const NavLink = styled.li`
-  margin-left: 1rem;
+    margin-left: 1rem;
 
-  & > a {
-    color: #fff;
-    text-decoration: none;
+& > a {
+  color: #fff;
+  text-decoration: none;
 
-    &:hover {
-      text-decoration: underline;
-    }
+  &:hover {
+    text-decoration: underline;
   }
+}
 `;
+
+
 
 function Navbar() {
   return (
     <NavContainer>
-      <Logo>Logo</Logo>
+      <img src={teste1} alt="Imagem de exemplo" />
       <NavLinks>
         <NavLink>
           <a href="#">Fale conosco</a>
@@ -52,4 +52,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Navbar
