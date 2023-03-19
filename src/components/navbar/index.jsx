@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import teste1 from "../../img/logo1.png";
+import { Link } from 'react-router-dom';
 
 const NavContainer = styled.nav`
   display: flex;
@@ -43,14 +44,14 @@ const LoginButton = styled.button`
   padding: 5px 10px;
 `;
 
-function Navbar({ loggedIn, onLoginClick, onLogoutClick }) {
+function Navbar({ loggedIn}) {
   return (
     <NavContainer>
       <img src={teste1} alt="Imagem de exemplo" 
        style={{ width: '3%', height: 'auto' }}/>
       <NavLinks>
         <NavLink>
-          <a href="#">Página inicial</a>
+          <a href="/">Página inicial</a>
         </NavLink>
         <NavLink>
           <a href="#">Blog</a>
@@ -62,9 +63,9 @@ function Navbar({ loggedIn, onLoginClick, onLogoutClick }) {
           <a href="#">Política de privacidade</a>
         </NavLink>
       </NavLinks>
-      <LoginButton onClick={loggedIn ? onLogoutClick : onLoginClick}>
-        {loggedIn ? "Logout" : "Cadastro"}
-      </LoginButton>
+      <Link to="/cadastro">
+        <LoginButton>{loggedIn ? "Logout" : "Cadastro"}</LoginButton>
+      </Link>
     </NavContainer>
   );
 }

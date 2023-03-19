@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./page/home";
-import Cadastro from "./page/cadastro";
+import Home from "../page/home";
+import Cadastro from "../page/cadastro";
 
 function App() {
   return (
@@ -14,3 +14,4 @@ function App() {
 }
 
 export default App;
+
