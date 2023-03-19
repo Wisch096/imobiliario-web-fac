@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
+import FooterNovo from '../components/footer_NOVO';
 
 const Card = styled.div`
   width: 350px;
@@ -96,7 +97,7 @@ const Cadastro = () => {
         </form>
       </CardBody>
     </Card>
-    <Footer />
+    <FooterNovo />
     </>
   );
 };

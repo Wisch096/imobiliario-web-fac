@@ -7,6 +7,7 @@ import { useState } from "react";
         flex-direction: column;
         align-items: center;
         margin-top: 30px;
+        font-family: 'Verdana';
     `;
 
     const Titulo = styled.h1`

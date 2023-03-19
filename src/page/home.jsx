@@ -4,6 +4,7 @@ import Card from "../components/card_imob";
 import Navbar from '../components/navbar';
 import Searchbar from '../components/searchbar';
 import Footer from '../components/footer';
+import FooterNovo from '../components/footer_NOVO';
 
 const Container = styled.div`
   margin: 0;
@@ -63,7 +64,7 @@ function Home() {
         />
         
       </ContainerCard>
-      <Footer />
+      <FooterNovo />
     </Container>
 
 

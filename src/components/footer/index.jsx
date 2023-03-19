@@ -36,6 +36,12 @@ const NavLink = styled.li`
 }
 `;
 
+const FooterText = styled.p`
+  font-size: 1.2rem;
+  color: #777;
+  text-align: center;
+`;
+
 function Footer() {
     return (
         <NavContainer>
@@ -47,6 +53,9 @@ function Footer() {
         <NavLink>
           <a href="#">Contato</a>
           <p>(77)998726000</p>
+          <FooterText>
+        © 2023 Sua Imobiliária. Todos os direitos reservados. Desenvolvido por{' '}
+        </FooterText>
         </NavLink>
       </NavLinks>
         </NavContainer>
