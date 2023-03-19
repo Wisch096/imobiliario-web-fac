@@ -1,11 +1,11 @@
+import Home from "./page/home";
+
 function App() {
   return (
-   <div>
-      luisao sadihwsadkjhsdakjhdasjhasd dafjkvbdfjhfjdkhbjfdfd
-      tmj papa
-      ei 
-   </div>
-  );
+    <>
+      <Home />
+      </>
+  )
 }
 
 export default App;
