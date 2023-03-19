@@ -6,8 +6,8 @@ const NavContainer = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #B0C4DE;
-  color: #fff;
+  background-color: black;
+  color: white;
   padding: 1rem;
   font-size: 25px;
   font-family: 'Verdana';
@@ -25,7 +25,7 @@ const NavLink = styled.li`
     
     
 & > a {
-  color: #000000;
+  color: white;
   text-decoration: none;
 &:hover {
     text-decoration: underline;

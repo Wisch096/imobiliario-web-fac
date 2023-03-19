@@ -8,6 +8,7 @@ import Footer from '../components/footer';
 const Container = styled.div`
   margin: 0;
   padding: 0;
+  background-color: #FFFAF0;
 `;
 
 const ContainerCard = styled.div`

@@ -25,6 +25,7 @@ import { useState } from "react";
 
     const SearchInput = styled.input`
     border: none;
+    background-color: #FFFAF0;
     flex: 1;
     margin-left: 8px;
     font-size: 16px;

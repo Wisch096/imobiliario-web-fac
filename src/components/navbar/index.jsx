@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import teste1 from "../../img/logo1.png";
+import teste1 from "../../img/logo2.jpg";
 import { Link } from 'react-router-dom';
 
 const NavContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:#B0C4DE;
+  background-color:black;
   padding: 1rem;
   font-size: 17px;
   font-family: 'Verdana';
@@ -23,7 +23,7 @@ const NavLink = styled.li`
   margin-left: 1rem;
 
   & > a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 14px;
 
