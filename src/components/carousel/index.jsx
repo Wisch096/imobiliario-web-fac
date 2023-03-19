@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import { useState, useEffect } from 'react';
 
 const images = [
-  { id: 1, src: 'teste1.jpg', alt: 'Image 1' },
-  { id: 2, src: 'teste2.jpg', alt: 'Image 2' },
-  { id: 3, src: 'teste3.jpg', alt: 'Image 3' },
+  { id: 1, src: 'carousel1.jpg', alt: 'Image 1' },
+  { id: 2, src: 'carousel2.jpg', alt: 'Image 2' },
+  { id: 3, src: 'carousel3.jpg', alt: 'Image 3' },
 ];
 
 const CarouselContainer = styled.div`
