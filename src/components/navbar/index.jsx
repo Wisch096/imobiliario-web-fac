@@ -2,16 +2,14 @@ import styled from "styled-components";
 import teste1 from "../../img/logo.png";
 
 const NavContainer = styled.nav`
-    display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:#191970;
-  color: #fff;
+  background-color:#B0C4DE;
   padding: 1rem;
-  font-size: 25px;
+  font-size: 17px;
   font-family: 'Verdana';
 `;
-
 
 
 const NavLinks = styled.ul`
@@ -25,7 +23,7 @@ const NavLink = styled.li`
     margin-left: 1rem;
 
 & > a {
-  color: #fff;
+  color: black;
   text-decoration: none;
 
   &:hover {
@@ -40,7 +38,7 @@ function Navbar() {
   return (
     <NavContainer>
       <img src={teste1} alt="Imagem de exemplo" 
-       style={{ width: '5%', height: 'auto' }}/>
+       style={{ width: '3%', height: 'auto' }}/>
       <NavLinks>
         <NavLink>
           <a href="#">Fale conosco</a>

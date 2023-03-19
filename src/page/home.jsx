@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Carousel from "../components/carousel";
 import Card from "../components/card_imob";
 import Navbar from '../components/navbar';
+import Searchbar from '../components/searchbar';
 
 const Container = styled.div`
   margin: 0;
@@ -17,10 +18,9 @@ const ContainerCard = styled.div`
 function Home() {
   return (
     <Container>
-      <div>
         <Navbar />
         <Carousel />
-      </div>
+        <Searchbar />
       <ContainerCard>
         <Card 
             propertyType="Casa" 

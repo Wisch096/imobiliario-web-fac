@@ -6,7 +6,7 @@ const CardContainer = styled.div`
   border-radius: 8px;
   overflow: hidden;
   width: 25%;
-  margin-top: 400px;
+  margin-top: 100px;
 `;
 
 const Image = styled.img`
