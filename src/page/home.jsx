@@ -13,7 +13,8 @@ const Container = styled.div`
 const ContainerCard = styled.div`
   display: flex;
   flex-direction: row;
-`;
+  justify-content: center;
+  `;
 
 
 function Home() {

@@ -33,6 +33,10 @@ import { useState } from "react";
     }
     `;
 
+    const Subtitulo = styled.h3`
+        color: #808080;
+    `
+
     function Pesquisa() {
 
         const [searchTerm, setSearchTerm] = useState('');
@@ -44,7 +48,8 @@ import { useState } from "react";
 
         return (
         <Container>
-            <Titulo>ALUGUE O COMPRE ESSE CACETE</Titulo>
+            <Titulo>M&L Imobiliária</Titulo>
+            <Subtitulo>Encontre a casa dos seus sonhos para comprar ou alugar conosco.</Subtitulo>
             <SearchBar>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#999" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="11" cy="11" r="8" />

@@ -5,8 +5,15 @@ const CardContainer = styled.div`
   border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
-  width: 25%;
-  margin-top: 100px;
+  width: 22%;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  transition: transform 0.3s ease-out;
+  &:hover {
+    transform: translateY(-20px);
+  }
 `;
 
 const Image = styled.img`
