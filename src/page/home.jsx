@@ -5,11 +5,12 @@ import Navbar from '../components/navbar';
 import Searchbar from '../components/searchbar';
 import Footer from '../components/footer';
 import FooterNovo from '../components/footer_NOVO';
+import "normalize.css";
 
 const Container = styled.div`
   margin: 0;
   padding: 0;
-  background-color: #FFFAF0;
+  background-color: #F5F5F5;
 `;
 
 const ContainerCard = styled.div`

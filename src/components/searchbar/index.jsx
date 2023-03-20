@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { useState } from "react";
+import ansosa from "../../img/react_img.svg"
 
 
     const Container = styled.div`
@@ -26,7 +27,7 @@ import { useState } from "react";
 
     const SearchInput = styled.input`
     border: none;
-    background-color: #FFFAF0;
+    background-color: #F5F5F5;
     flex: 1;
     margin-left: 8px;
     font-size: 16px;
@@ -37,6 +38,11 @@ import { useState } from "react";
 
     const Subtitulo = styled.h3`
         color: #808080;
+    `
+
+    const ImagemReact = styled.img`
+        width: 400px;
+        height: 300px;
     `
 
     function Pesquisa() {
@@ -50,6 +56,7 @@ import { useState } from "react";
 
         return (
         <Container>
+            <ImagemReact src={ansosa} alt="" />
             <Titulo>M&L Imobiliária</Titulo>
             <Subtitulo>Encontre a casa dos seus sonhos para comprar ou alugar conosco.</Subtitulo>
             <SearchBar>

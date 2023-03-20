@@ -6,7 +6,7 @@ const NavContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:black;
+  background-color: black;
   padding: 1rem;
   font-size: 17px;
   font-family: 'Verdana';
