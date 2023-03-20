@@ -7,10 +7,14 @@ const NavContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
   background-color: black;
-  padding: 1rem;
+  padding: 4px;
   font-size: 17px;
   font-family: 'Verdana';
 `;
+
+const Logo = styled.h3`
+  color: white;
+`
 
 const NavLinks = styled.ul`
   display: flex;
@@ -47,8 +51,7 @@ const LoginButton = styled.button`
 function Navbar({ loggedIn}) {
   return (
     <NavContainer>
-      <img src={teste1} alt="Imagem de exemplo" 
-       style={{ width: '3%', height: 'auto' }}/>
+      <Logo>M&L</Logo>
       <NavLinks>
         <NavLink>
           <a href="/">Página inicial</a>

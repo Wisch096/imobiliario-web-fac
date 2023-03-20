@@ -25,11 +25,13 @@ const Image = styled.img`
 
 const InfoContainer = styled.div`
   padding: 16px;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 `;
 
 const PropertyType = styled.p`
   font-size: 14px;
-  color: #888;
+  color: black;
   margin-bottom: 8px;
 `;
 
@@ -43,11 +45,13 @@ const DetailsContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 8px;
+  color: black;
+  font-weight: bold;
 `;
 
 const Detail = styled.p`
   font-size: 14px;
-  color: #444;
+  color: black;
   display: flex;
   align-items: center;
 `;
@@ -60,7 +64,7 @@ const Icon = styled.i`
 const Price = styled.p`
   font-size: 24px;
   font-weight: bold;
-  color: #007bff;
+  color: black;
 `;
 
 const Card = ({ propertyType, address, numBedrooms, numBathrooms, area, price, imageUrl }) => {

@@ -17,23 +17,23 @@ import ansosa from "../../img/react_img.svg"
     `;
 
     const SearchBar = styled.div`
-    display: flex;
-    align-items: center;
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 8px;
+        display: flex;
+        align-items: center;
+        width: 300px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 8px;
     `;
 
     const SearchInput = styled.input`
-    border: none;
-    background-color: #F5F5F5;
-    flex: 1;
-    margin-left: 8px;
-    font-size: 16px;
-    &:focus {
-    outline: none;
-    }
+        border: none;
+        background-color: #F5F5F5;
+        flex: 1;
+        margin-left: 8px;
+        font-size: 16px;
+        &:focus {
+        outline: none;
+        }
     `;
 
     const Subtitulo = styled.h3`

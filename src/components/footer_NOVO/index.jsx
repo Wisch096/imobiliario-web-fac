@@ -1,4 +1,7 @@
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSpotify, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
+
 
 const FooterContainer = styled.footer`
   display: flex;
@@ -48,16 +51,14 @@ const SocialLink = styled.a`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
   color: white;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   margin-right: 0.5rem;
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    background-color: white;
     transform: scale(1.1);
   }
 `;
@@ -85,13 +86,13 @@ function FooterNovo() {
         <ColumnTitle>Redes Sociais</ColumnTitle>
         <SocialLinksContainer>
           <SocialLink href="https://www.facebook.com">
-            <i className="fab fa-facebook-f"></i>
+            <FontAwesomeIcon icon={faSpotify} width={60}/>
           </SocialLink>
           <SocialLink href="https://www.twitter.com">
-            <i className="fab fa-twitter"></i>
+            <FontAwesomeIcon icon={faFacebook} width={60}/>
           </SocialLink>
           <SocialLink href="https://www.instagram.com">
-            <i className="fab fa-instagram"></i>
+            <FontAwesomeIcon icon={faInstagram} width={60}/>
           </SocialLink>
         </SocialLinksContainer>
       </Column>
