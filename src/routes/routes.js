@@ -4,8 +4,15 @@ import Cadastro from "../page/cadastro";
 import Login from "../page/login";
 import Blog from "../page/blog";
 import PoliticaDePrivacidade from "../page/politicadeprivacidade";
+import PainelAdmin from "../page/paineladmin";
 
-function App() {
+const Private = ({ Item }) => {
+  const signed = true;
+
+  return signed > 0 ? <Item /> : <Login />
+}
+
+function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
@@ -14,10 +21,11 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/politicadeprivacidade" element={<PoliticaDePrivacidade />} />
+        <Route path="/paineladmin" element={<Private Item={PainelAdmin}/>} />
       </Routes>
     </BrowserRouter>
   );
 }
 
-export default App;
+export default AppRoutes;
 

@@ -53,7 +53,13 @@ const LoginButton = styled.button`
 function Navbar({ loggedIn}) {
   return (
     <NavContainer>
-      <Logo>M&L</Logo>
+      <Logo>
+      <a href="/" style={{
+        color: "inherit",
+        textDecoration: "none",
+        cursor: "pointer"
+      }}>M&amp;L</a>
+      </Logo>
       <NavLinks>
         <NavLink>
           <a href="/">Página inicial</a>
