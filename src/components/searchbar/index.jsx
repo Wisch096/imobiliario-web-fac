@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { useState } from "react";
-import ansosa from "../../img/react_img.svg"
+import ansosa from "../../img/undraw_sweet_home_dkhr.svg"
 
 
     const Container = styled.div`

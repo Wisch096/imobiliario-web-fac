@@ -47,7 +47,7 @@ const FormGroup = styled.div`
 `;
 
 const Label = styled.label`
-  display: block;
+  display:  block;
   font-size: 14px;
   color: black;
   font-weight: bold;
@@ -55,11 +55,12 @@ const Label = styled.label`
 `;
 
 const Input = styled.input`
-  width: 100%;
+  width: 95%;
   padding: 8px;
   font-size: 14px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  
 `;
 
 const Button = styled.input.attrs({ type: 'submit' })`

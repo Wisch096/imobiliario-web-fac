@@ -60,14 +60,14 @@ function Navbar({ loggedIn}) {
           <a href="#">Blog</a>
         </NavLink>
         <NavLink>
-          <a href="#">Perguntas frequentes (FAQ)</a>
+          <a href="/cadastro">Cadastro</a>
         </NavLink>
         <NavLink>
           <a href="#">Política de privacidade</a>
         </NavLink>
       </NavLinks>
-      <Link to="/cadastro">
-        <LoginButton>{loggedIn ? "Logout" : "Cadastro"}</LoginButton>
+      <Link to="/login">
+        <LoginButton>{loggedIn ? "Logout" : "Login"}</LoginButton>
       </Link>
     </NavContainer>
   );

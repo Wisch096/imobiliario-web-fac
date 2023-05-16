@@ -3,7 +3,6 @@ import Carousel from "../components/carousel";
 import Card from "../components/card_imob";
 import Navbar from '../components/navbar';
 import Searchbar from '../components/searchbar';
-import Footer from '../components/footer';
 import FooterNovo from '../components/footer_NOVO';
 import "normalize.css";
 
