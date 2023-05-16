@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.72d78f30.css",
+    "main.js": "/static/js/main.8cc99411.js",
+    "static/media/Construction worker-rafiki.svg": "/static/media/Construction worker-rafiki.a09350db0a58839c1596f410f9212e52.svg",
+    "static/media/imglogin.svg": "/static/media/imglogin.35f97b86f1b3599b2e7937adbb7a02f4.svg",
+    "static/media/paineladmin.svg": "/static/media/paineladmin.e3edf24c248c9b6c29ded1b9f507b420.svg",
+    "static/media/small_twon.svg": "/static/media/small_twon.7d074b999d876d94b8cf407db3be4cbb.svg",
+    "static/media/undraw_sweet_home_dkhr.svg": "/static/media/undraw_sweet_home_dkhr.4a3227e3cc9f601ed20455fe536e31c0.svg",
+    "static/media/bitcoin_imb.svg": "/static/media/bitcoin_imb.9b3cd4c4e36db5d094aa8f2e64b2713e.svg",
+    "index.html": "/index.html",
+    "main.72d78f30.css.map": "/static/css/main.72d78f30.css.map",
+    "main.8cc99411.js.map": "/static/js/main.8cc99411.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72d78f30.css",
+    "static/js/main.8cc99411.js"
+  ]
+}
