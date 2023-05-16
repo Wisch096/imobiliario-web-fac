@@ -4,13 +4,13 @@ import { useState, useEffect } from 'react';
 const images = [
   { id: 1, src: 'carrossel1.jpg', alt: 'Image 1' },
   { id: 2, src: 'carrossel2.jpg', alt: 'Image 2' },
-  { id: 3, src: 'carrossel3.jpg', alt: 'Image 3' },
+  { id: 3, src: 'carrossel4.jpg', alt: 'Image 3' },
 ];
 
 const CarouselContainer = styled.div`
   position: relative;
   width: 100%;
-  height: 800px;
+  height: 600px;
 `;
 
 const CarouselImage = styled.img`

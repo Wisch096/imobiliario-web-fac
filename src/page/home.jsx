@@ -33,33 +33,33 @@ function Home() {
             numBathrooms={2} 
             area={100} 
             price={1500} 
-            imageUrl="teste1.jpg" 
+            imageUrl="casa2.jpg" 
+        />
+        <Card 
+            propertyType="Apartamento" 
+            address="Rua B, 234" 
+            numBedrooms={3} 
+            numBathrooms={2} 
+            area={50} 
+            price={3400} 
+            imageUrl="casa1.jpg" 
         />
         <Card 
             propertyType="Casa" 
-            address="Rua A, 123" 
-            numBedrooms={3} 
-            numBathrooms={2} 
-            area={100} 
-            price={1500} 
-            imageUrl="teste2.jpg" 
+            address="Rua C, 345" 
+            numBedrooms={4} 
+            numBathrooms={3} 
+            area={200} 
+            price={2699} 
+            imageUrl="casa3.jpg" 
         />
         <Card 
             propertyType="Casa" 
-            address="Rua A, 123" 
-            numBedrooms={3} 
-            numBathrooms={2} 
-            area={100} 
-            price={1500} 
-            imageUrl="teste3.jpg" 
-        />
-        <Card 
-            propertyType="Casa" 
-            address="Rua A, 123" 
-            numBedrooms={3} 
-            numBathrooms={2} 
-            area={100} 
-            price={1500} 
+            address="Rua D, 456" 
+            numBedrooms={2} 
+            numBathrooms={3} 
+            area={200} 
+            price={3199} 
             imageUrl="teste3.jpg" 
         />
         
