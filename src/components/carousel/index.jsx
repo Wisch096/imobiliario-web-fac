@@ -10,7 +10,7 @@ const images = [
 const CarouselContainer = styled.div`
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 500px;
 `;
 
 const CarouselImage = styled.img`

@@ -1,15 +1,16 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "../page/home";
 import Cadastro from "../page/cadastro";
-import Login from "../page/login";
+import SigIn from "../page/Sigin";
 import Blog from "../page/blog";
+import Signup from "../page/Sigup";
 import PoliticaDePrivacidade from "../page/politicadeprivacidade";
 import PainelAdmin from "../page/paineladmin";
 
 const Private = ({ Item }) => {
   const signed = true;
 
-  return signed > 0 ? <Item /> : <Login />
+  return signed > 0 ? <Item /> : <SigIn />
 }
 
 function AppRoutes() {
@@ -18,7 +19,8 @@ function AppRoutes() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cadastro" element={<Cadastro />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<SigIn />} />
+        <Route exact path="/signup" element={<Signup />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/politicadeprivacidade" element={<PoliticaDePrivacidade />} />
         <Route path="/paineladmin" element={<Private Item={PainelAdmin}/>} />

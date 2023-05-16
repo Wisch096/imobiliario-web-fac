@@ -103,3 +103,22 @@ body {
     background-color: white;
     cursor: pointer;
 }
+
+.label-erro {
+    font-size: 14px;
+    color: red;
+}
+
+.label-sigin {
+    font-size: 16px;
+    color: #676767;
+}
+
+.strong-sigin {
+    cursor: pointer;
+}
+
+.strong-sigin a {
+    text-decoration: none;
+    color: #676767;
+}
