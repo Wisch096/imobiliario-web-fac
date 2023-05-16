@@ -13,6 +13,7 @@ const NavContainer = styled.nav`
 `;
 
 const Logo = styled.h3`
+  margin-left: 16px;
   color: white;
 `
 
@@ -46,6 +47,7 @@ const LoginButton = styled.button`
   cursor: pointer;
   border-radius: 10px;
   padding: 5px 10px;
+  margin-right: 16px;
 `;
 
 function Navbar({ loggedIn}) {
