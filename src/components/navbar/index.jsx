@@ -59,13 +59,13 @@ function Navbar({ loggedIn}) {
           <a href="/">Página inicial</a>
         </NavLink>
         <NavLink>
-          <a href="#">Blog</a>
+          <a href="/blog">Blog</a>
         </NavLink>
         <NavLink>
           <a href="/cadastro">Cadastro</a>
         </NavLink>
         <NavLink>
-          <a href="#">Política de privacidade</a>
+          <a href="politicadeprivacidade">Política de privacidade</a>
         </NavLink>
       </NavLinks>
       <Link to="/login">
