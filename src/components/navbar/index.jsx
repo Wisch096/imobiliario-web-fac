@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate  } from 'react-router-dom';
 import useAuth from "../../hooks/useAuth";
+import { useState } from "react";
 
 const NavContainer = styled.nav`
   display: flex;
@@ -51,7 +52,19 @@ const LoginButton = styled.button`
 `;
 
 function Navbar() {
-  const { signed } = useAuth();
+
+  const { signed, signup, signout } = useAuth();
+  const navigate = useNavigate();
+  const [logoutClicked, setLogoutClicked] = useState(false);
+
+  const handleSignout = () => {
+    signout();
+    setLogoutClicked(true);
+  };
+
+   if (logoutClicked) {
+    navigate('/');
+  }
 
   return (
     <NavContainer>
@@ -71,17 +84,23 @@ function Navbar() {
           <Link to="/cadastro">Cadastro</Link>
         </NavLink>
         <NavLink>
-          <Link to="politicadeprivacidade">Política de privacidade</Link>
+          <Link to="/politicadeprivacidade">Política de privacidade</Link>
         </NavLink>
         {signed && (
           <NavLink>
-            <Link to="/paineladmin">Painel Admin</Link>
+            <Link to="/paineladmin">Painel Administrativo</Link>
           </NavLink>
         )}
       </NavLinks>
-      <Link to="/login">
-        <LoginButton>{signed ? 'Logout' : 'Login'}</LoginButton>
-      </Link>
+      <div>
+        {signed ? (
+          <LoginButton onClick={handleSignout}>Logout</LoginButton>
+        ) : (
+          <Link to="/login">
+            <LoginButton>Login</LoginButton>
+          </Link>
+        )}
+      </div>
     </NavContainer>
   );
 }
