@@ -32,7 +32,7 @@ const Signup = () => {
       }
   
       alert("Usuário cadatrado com sucesso!");
-      navigate("/login");
+      navigate("/");
     };
   
 
