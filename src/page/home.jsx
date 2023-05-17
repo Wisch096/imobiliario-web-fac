@@ -33,7 +33,7 @@ function Home() {
             numBathrooms={2} 
             area={100} 
             price={1500} 
-            imageUrl="casa2.jpg" 
+            imageUrl="teste1.jpg" 
         />
         <Card 
             propertyType="Apartamento" 
@@ -42,7 +42,7 @@ function Home() {
             numBathrooms={2} 
             area={50} 
             price={3400} 
-            imageUrl="casa1.jpg" 
+            imageUrl="teste2.jpg" 
         />
         <Card 
             propertyType="Casa" 

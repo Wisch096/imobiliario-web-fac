@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import teste1 from "../../img/logo3.jpg";
 import { Link } from 'react-router-dom';
+import useAuth from "../../hooks/useAuth";
 
 const NavContainer = styled.nav`
   display: flex;
@@ -15,7 +15,7 @@ const NavContainer = styled.nav`
 const Logo = styled.h3`
   margin-left: 16px;
   color: white;
-`
+`;
 
 const NavLinks = styled.ul`
   display: flex;
@@ -50,32 +50,37 @@ const LoginButton = styled.button`
   margin-right: 16px;
 `;
 
-function Navbar({ loggedIn}) {
+function Navbar() {
+  const { signed } = useAuth();
+
   return (
     <NavContainer>
       <Logo>
-      <a href="/" style={{
-        color: "inherit",
-        textDecoration: "none",
-        cursor: "pointer"
-      }}>M&amp;L</a>
+        <Link to="/" style={{ color: 'inherit', textDecoration: 'none', cursor: 'pointer' }}>
+          M&amp;L
+        </Link>
       </Logo>
       <NavLinks>
         <NavLink>
-          <a href="/">Página inicial</a>
+          <Link to="/">Página inicial</Link>
         </NavLink>
         <NavLink>
-          <a href="/blog">Blog</a>
+          <Link to="/blog">Blog</Link>
         </NavLink>
         <NavLink>
-          <a href="/cadastro">Cadastro</a>
+          <Link to="/cadastro">Cadastro</Link>
         </NavLink>
         <NavLink>
-          <a href="politicadeprivacidade">Política de privacidade</a>
+          <Link to="politicadeprivacidade">Política de privacidade</Link>
         </NavLink>
+        {signed && (
+          <NavLink>
+            <Link to="/paineladmin">Painel Admin</Link>
+          </NavLink>
+        )}
       </NavLinks>
       <Link to="/login">
-        <LoginButton>{loggedIn ? "Logout" : "Login"}</LoginButton>
+        <LoginButton>{signed ? 'Logout' : 'Login'}</LoginButton>
       </Link>
     </NavContainer>
   );
