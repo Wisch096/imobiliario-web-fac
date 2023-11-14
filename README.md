@@ -1,2 +1,2 @@
-# Site desenvolvido como projeto da faculdade
+# Site desenvolvido como projeto da faculdade.
 
